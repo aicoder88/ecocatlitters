@@ -22,7 +22,7 @@ const cornFAQs = [
   },
   {
     question: 'How does corn litter compare to clay for odor control?',
-    answer: 'Corn litter offers good odor control through absorption, though it may not be quite as strong as clay with deodorizers. For enhanced odor control, scoop frequently and consider adding an activated carbon supplement like <a href="https://purrify.ca/purr?utm_source=ecocatlitters" target="_blank">Purrify</a>.'
+    answer: 'Corn litter offers good odor control through absorption, though it may not be quite as strong as clay with deodorizers. For enhanced odor control, scoop frequently and consider adding an activated carbon supplement like <a href="https://purrify.ca/purr?utm_source=ecocatlitters" target="_blank" rel="noopener noreferrer">Purrify</a>.'
   },
   {
     question: 'Will my cat accept corn litter?',

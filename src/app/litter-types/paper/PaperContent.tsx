@@ -14,7 +14,7 @@ const paperFAQs = [
   },
   {
     question: 'Does paper litter control odors well?',
-    answer: 'Paper litter\'s main weakness is odor control—it absorbs but doesn\'t neutralize odors. To manage smells, scoop frequently, add baking soda, use an activated carbon supplement like <a href="https://purrify.ca/purr/products?utm_source=ecocatlitters" target="_blank">Purrify</a>, and replace all litter every 5-7 days.'
+    answer: 'Paper litter\'s main weakness is odor control—it absorbs but doesn\'t neutralize odors. To manage smells, scoop frequently, add baking soda, use an activated carbon supplement like <a href="https://purrify.ca/purr/products?utm_source=ecocatlitters" target="_blank" rel="noopener noreferrer">Purrify</a>, and replace all litter every 5-7 days.'
   },
   {
     question: 'Is paper litter good for kittens?',

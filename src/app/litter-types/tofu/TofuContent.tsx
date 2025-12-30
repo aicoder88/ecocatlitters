@@ -26,7 +26,7 @@ const tofuFAQs = [
   },
   {
     question: 'Does tofu litter smell bad?',
-    answer: 'Tofu litter has a mild, pleasant scent and offers good odor control through absorption. For heavy use or sensitive noses, scoop frequently and consider adding activated carbon like <a href="https://purrify.ca/purr/trial?utm_source=ecocatlitters" target="_blank">Purrify</a> for extra freshness.'
+    answer: 'Tofu litter has a mild, pleasant scent and offers good odor control through absorption. For heavy use or sensitive noses, scoop frequently and consider adding activated carbon like <a href="https://purrify.ca/purr/trial?utm_source=ecocatlitters" target="_blank" rel="noopener noreferrer">Purrify</a> for extra freshness.'
   }
 ];
 
