@@ -450,12 +450,12 @@ export default function SwitchingGuideContent() {
             Mixing litters can sometimes create unexpected odor issues as the materials
             interact differently. If smell becomes a problem during transition, try
             adding{' '}
-            <a href="https://purrify.ca/purr/products?utm_source=ecocatlitters" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>
+            <a href="https://purrify.ca/purr/products?utm_source=ecocatlitters" style={{ color: 'inherit', textDecoration: 'underline' }}>
               Purrify activated carbon
             </a>{' '}
             to neutralize odors naturally. It works with any litter type and makes
             the transition period much more pleasant.{' '}
-            <a href="https://purrify.ca/purr/trial?utm_source=ecocatlitters" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>
+            <a href="https://purrify.ca/purr/trial?utm_source=ecocatlitters" style={{ color: 'inherit', textDecoration: 'underline' }}>
               Try it risk-free
             </a>.
           </TipText>

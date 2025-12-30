@@ -357,7 +357,7 @@ export default function BambooContent() {
             chemical deodorizers, bamboo has natural antimicrobial properties that
             neutralize odors at the source. For even stronger odor control, many bamboo
             litter users add{' '}
-            <a href="https://purrify.ca/purr/products?utm_source=ecocatlitters" target="_blank" rel="noopener noreferrer">
+            <a href="https://purrify.ca/purr/products?utm_source=ecocatlitters">
               Purrify activated carbon
             </a>{' '}
             to their litter boxes.

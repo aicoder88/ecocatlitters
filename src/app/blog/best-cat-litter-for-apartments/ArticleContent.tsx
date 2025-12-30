@@ -385,7 +385,7 @@ export default function ArticleContent() {
           <TipText>
             For apartments where the litter box is in a main living area, combine any
             eco-litter with an{' '}
-            <a href="https://purrify.ca/purr?utm_source=ecocatlitters" target="_blank" rel="noopener noreferrer">
+            <a href="https://purrify.ca/purr?utm_source=ecocatlitters">
               activated carbon supplement like Purrify
             </a>. This dual-action approach captures odors that even the best litters
             might miss, keeping your small space fresh.

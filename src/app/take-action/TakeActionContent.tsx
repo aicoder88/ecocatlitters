@@ -311,7 +311,7 @@ export default function TakeActionContent() {
           <CTAText>
             Join thousands of cat parents who&apos;ve already made the change.
             Start with{' '}
-            <a href="https://purrify.ca/purr?utm_source=ecocatlitters" target="_blank" rel="noopener noreferrer" style={{ color: '#74C69D' }}>
+            <a href="https://purrify.ca/purr?utm_source=ecocatlitters" style={{ color: '#74C69D' }}>
               Purrify
             </a>
             —it works with any litter and eliminates odors naturally.

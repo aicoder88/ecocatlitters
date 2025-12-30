@@ -483,7 +483,7 @@ export default function ArticleContent() {
             </ListItem>
             <ListItem>
               Add{' '}
-              <a href="https://purrify.ca/purr?utm_source=ecocatlitters" target="_blank" rel="noopener noreferrer">
+              <a href="https://purrify.ca/purr?utm_source=ecocatlitters">
                 Purrify activated carbon
               </a>{' '}
               as a supplement
