@@ -84,15 +84,19 @@ export default function CallToAction() {
           Ready to Make a <span>Difference</span>?
         </Title>
         <Subtitle>
-          Every litter box is an opportunity. Calculate your potential impact 
-          and join thousands of cat parents making the switch to sustainable.
+          Every litter box is an opportunity. Discover sustainable options
+          and join thousands of cat parents making the switch to eco-friendly.
         </Subtitle>
         <CTAGroup>
-          <ActionButton href="/impact-calculator" variant="urgent">
-            Calculate Your Impact
+          <ActionButton href="/solutions" variant="urgent">
+            Explore Litter Types
           </ActionButton>
-          <ActionButton href="/take-action" variant="secondary">
-            Join the Movement
+          <ActionButton
+            href="https://purrify.ca/purr/trial?utm_source=ecocatlitters"
+            variant="light"
+            external
+          >
+            Try Purrify Free
           </ActionButton>
         </CTAGroup>
         

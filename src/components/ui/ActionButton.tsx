@@ -3,7 +3,9 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 
-const BaseButton = styled.button<{ $variant?: 'primary' | 'secondary' | 'urgent' }>`
+type ButtonVariant = 'primary' | 'secondary' | 'urgent' | 'light';
+
+const BaseButton = styled.button<{ $variant?: ButtonVariant }>`
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -19,19 +21,19 @@ const BaseButton = styled.button<{ $variant?: 'primary' | 'secondary' | 'urgent'
   border: none;
   cursor: pointer;
   text-decoration: none;
-  
+
   ${({ theme, $variant }) => {
     if ($variant === 'urgent') {
       return `
         background: ${theme.colors.crisis};
         color: ${theme.colors.white};
         animation: pulse 2s infinite;
-        
+
         @keyframes pulse {
           0%, 100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.5); }
           50% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); }
         }
-        
+
         &:hover {
           background: rgba(220, 38, 38, 0.85);
           transform: scale(1.05);
@@ -43,17 +45,30 @@ const BaseButton = styled.button<{ $variant?: 'primary' | 'secondary' | 'urgent'
         background: transparent;
         color: ${theme.colors.forestGreen};
         border: 2px solid ${theme.colors.forestGreen};
-        
+
         &:hover {
           background: ${theme.colors.forestGreen};
           color: ${theme.colors.white};
         }
       `;
     }
+    if ($variant === 'light') {
+      return `
+        background: ${theme.colors.white};
+        color: ${theme.colors.forestGreen};
+        border: 2px solid ${theme.colors.white};
+
+        &:hover {
+          background: ${theme.colors.paleGreen};
+          border-color: ${theme.colors.paleGreen};
+          transform: translateY(-2px);
+        }
+      `;
+    }
     return `
       background: ${theme.colors.sunrise};
       color: ${theme.colors.white};
-      
+
       &:hover {
         background: ${theme.colors.sunriseLight};
         transform: translateY(-2px);
@@ -63,7 +78,7 @@ const BaseButton = styled.button<{ $variant?: 'primary' | 'secondary' | 'urgent'
   }}
 `;
 
-const BaseLink = styled(Link)<{ $variant?: 'primary' | 'secondary' | 'urgent' }>`
+const BaseLink = styled(Link)<{ $variant?: ButtonVariant }>`
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -79,13 +94,13 @@ const BaseLink = styled(Link)<{ $variant?: 'primary' | 'secondary' | 'urgent' }>
   border: none;
   cursor: pointer;
   text-decoration: none;
-  
+
   ${({ theme, $variant }) => {
     if ($variant === 'urgent') {
       return `
         background: ${theme.colors.crisis};
         color: ${theme.colors.white};
-        
+
         &:hover {
           background: rgba(220, 38, 38, 0.85);
           transform: scale(1.05);
@@ -97,17 +112,30 @@ const BaseLink = styled(Link)<{ $variant?: 'primary' | 'secondary' | 'urgent' }>
         background: transparent;
         color: ${theme.colors.forestGreen};
         border: 2px solid ${theme.colors.forestGreen};
-        
+
         &:hover {
           background: ${theme.colors.forestGreen};
           color: ${theme.colors.white};
         }
       `;
     }
+    if ($variant === 'light') {
+      return `
+        background: ${theme.colors.white};
+        color: ${theme.colors.forestGreen};
+        border: 2px solid ${theme.colors.white};
+
+        &:hover {
+          background: ${theme.colors.paleGreen};
+          border-color: ${theme.colors.paleGreen};
+          transform: translateY(-2px);
+        }
+      `;
+    }
     return `
       background: ${theme.colors.sunrise};
       color: ${theme.colors.white};
-      
+
       &:hover {
         background: ${theme.colors.sunriseLight};
         transform: translateY(-2px);
@@ -121,22 +149,22 @@ interface ActionButtonProps {
   children: React.ReactNode;
   href?: string;
   onClick?: () => void;
-  variant?: 'primary' | 'secondary' | 'urgent';
+  variant?: ButtonVariant;
   external?: boolean;
 }
 
-export default function ActionButton({ 
-  children, 
-  href, 
-  onClick, 
+export default function ActionButton({
+  children,
+  href,
+  onClick,
   variant = 'primary',
-  external = false 
+  external = false
 }: ActionButtonProps) {
   if (href) {
     if (external) {
       return (
-        <BaseLink 
-          href={href} 
+        <BaseLink
+          href={href}
           $variant={variant}
           target="_blank"
           rel="noopener noreferrer"
@@ -151,7 +179,7 @@ export default function ActionButton({
       </BaseLink>
     );
   }
-  
+
   return (
     <BaseButton onClick={onClick} $variant={variant}>
       {children}

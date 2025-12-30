@@ -76,17 +76,6 @@ const FooterLink = styled(Link)`
   }
 `;
 
-const ExternalLink = styled.a`
-  display: block;
-  font-size: ${({ theme }) => theme.fontSizes.sm};
-  color: ${({ theme }) => theme.colors.lightGray};
-  margin-bottom: ${({ theme }) => theme.spacing.sm};
-  transition: color 0.2s ease;
-  
-  &:hover {
-    color: ${({ theme }) => theme.colors.mintGreen};
-  }
-`;
 
 const BottomSection = styled.div`
   display: flex;
@@ -132,32 +121,26 @@ export default function Footer() {
           
           <LinkSection>
             <LinkTitle>Learn</LinkTitle>
-            <FooterLink href="/the-problem">The Crisis</FooterLink>
-            <FooterLink href="/solutions">Solutions</FooterLink>
+            <FooterLink href="/the-problem">The Problem</FooterLink>
+            <FooterLink href="/solutions">Litter Types</FooterLink>
             <FooterLink href="/certifications">Certifications</FooterLink>
-            <FooterLink href="/impact-calculator">Calculator</FooterLink>
+            <FooterLink href="/switching-guide">Switching Guide</FooterLink>
+          </LinkSection>
+
+          <LinkSection>
+            <LinkTitle>Litter Types</LinkTitle>
+            <FooterLink href="/litter-types/bamboo">Bamboo</FooterLink>
+            <FooterLink href="/litter-types/wood">Wood & Pine</FooterLink>
+            <FooterLink href="/litter-types/corn">Corn</FooterLink>
+            <FooterLink href="/litter-types/walnut">Walnut Shell</FooterLink>
           </LinkSection>
           
           <LinkSection>
-            <LinkTitle>Act</LinkTitle>
-            <FooterLink href="/take-action">Take Action</FooterLink>
-            <FooterLink href="/solutions#featured">Shop Eco</FooterLink>
-            <ExternalLink href="https://purrify.ca?utm_source=ecocatlitters&utm_medium=footer" target="_blank" rel="noopener noreferrer">
-              Our Pick: Purrify
-            </ExternalLink>
-          </LinkSection>
-          
-          <LinkSection>
-            <LinkTitle>Resources</LinkTitle>
-            <ExternalLink href="https://purrify.ca/learn/science?utm_source=ecocatlitters" target="_blank" rel="noopener noreferrer">
-              The Science
-            </ExternalLink>
-            <ExternalLink href="https://purrify.ca/learn/safety?utm_source=ecocatlitters" target="_blank" rel="noopener noreferrer">
-              Safety Info
-            </ExternalLink>
-            <ExternalLink href="https://purrify.ca/blog?utm_source=ecocatlitters" target="_blank" rel="noopener noreferrer">
-              Blog
-            </ExternalLink>
+            <LinkTitle>More Types</LinkTitle>
+            <FooterLink href="/litter-types/wheat">Wheat</FooterLink>
+            <FooterLink href="/litter-types/paper">Paper</FooterLink>
+            <FooterLink href="/litter-types/grass">Grass</FooterLink>
+            <FooterLink href="/litter-types/tofu">Tofu</FooterLink>
           </LinkSection>
         </TopSection>
         

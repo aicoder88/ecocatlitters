@@ -164,59 +164,52 @@ export default function SolutionsPreview() {
         </SectionHeader>
         
         <SolutionsGrid>
-          <SolutionCard href="/solutions/bamboo">
+          <SolutionCard href="/litter-types/bamboo">
             <SolutionIcon>🎋</SolutionIcon>
             <SolutionTitle>Bamboo</SolutionTitle>
             <SolutionDesc>Fast-growing, biodegradable, naturally odor-fighting</SolutionDesc>
           </SolutionCard>
-          
-          <SolutionCard href="/solutions/wood">
+
+          <SolutionCard href="/litter-types/wood">
             <SolutionIcon>🪵</SolutionIcon>
             <SolutionTitle>Wood & Pine</SolutionTitle>
             <SolutionDesc>Sustainable forestry, excellent absorption</SolutionDesc>
           </SolutionCard>
-          
-          <SolutionCard href="/solutions/corn">
+
+          <SolutionCard href="/litter-types/corn">
             <SolutionIcon>🌽</SolutionIcon>
-            <SolutionTitle>Corn & Wheat</SolutionTitle>
-            <SolutionDesc>Agricultural byproducts, fully compostable</SolutionDesc>
+            <SolutionTitle>Corn</SolutionTitle>
+            <SolutionDesc>Agricultural byproducts, clumping, flushable</SolutionDesc>
           </SolutionCard>
-          
-          <SolutionCard href="/solutions/paper">
-            <SolutionIcon>📄</SolutionIcon>
-            <SolutionTitle>Recycled Paper</SolutionTitle>
-            <SolutionDesc>Dust-free, recycled content, gentle</SolutionDesc>
+
+          <SolutionCard href="/litter-types/walnut">
+            <SolutionIcon>🥜</SolutionIcon>
+            <SolutionTitle>Walnut Shell</SolutionTitle>
+            <SolutionDesc>Best odor control, dark color hides stains</SolutionDesc>
           </SolutionCard>
         </SolutionsGrid>
-        
-        <FeaturedSection id="featured">
+
+        <FeaturedSection>
           <FeaturedContent>
-            <FeaturedLabel>🏆 Our Top Pick</FeaturedLabel>
-            <FeaturedTitle>Purrify: Carbon-Negative Odor Control</FeaturedTitle>
+            <FeaturedLabel>Explore All 8 Types</FeaturedLabel>
+            <FeaturedTitle>Find the Perfect Match for Your Cat</FeaturedTitle>
             <FeaturedDesc>
-              Activated carbon technology that actually captures and neutralizes 
-              odors at the molecular level. Made with sustainable materials and 
-              designed for the eco-conscious cat parent.
+              From grass to tofu, wheat to paper—each eco-friendly option has
+              unique strengths. Our comprehensive guides help you choose based
+              on your cat&apos;s preferences and your priorities.
             </FeaturedDesc>
             <BadgeRow>
-              <CertificationBadge icon="🌿" label="Natural" size="small" />
-              <CertificationBadge icon="♻️" label="Sustainable" size="small" />
-              <CertificationBadge icon="🐱" label="Cat-Safe" size="small" />
+              <CertificationBadge icon="📖" label="In-Depth Guides" size="small" />
+              <CertificationBadge icon="⚖️" label="Pros & Cons" size="small" />
+              <CertificationBadge icon="💡" label="Switching Tips" size="small" />
             </BadgeRow>
-            <ActionButton 
-              href="https://purrify.ca/products?utm_source=ecocatlitters&utm_medium=featured" 
-              external
-            >
-              Explore Purrify →
+            <ActionButton href="/solutions" variant="light">
+              Browse All Litter Types →
             </ActionButton>
           </FeaturedContent>
           <div style={{ textAlign: 'center' }}>
-            <ActionButton 
-              href="https://purrify.ca/learn/science?utm_source=ecocatlitters" 
-              variant="secondary"
-              external
-            >
-              How It Works →
+            <ActionButton href="/switching-guide" variant="light">
+              How to Switch Guide →
             </ActionButton>
           </div>
         </FeaturedSection>

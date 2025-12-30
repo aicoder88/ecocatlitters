@@ -5,11 +5,6 @@ export default function WebsiteSchema() {
     name: 'EcoCatLitters',
     url: 'https://ecocatlitters.com',
     description: 'Discover eco-friendly, sustainable cat litter options that protect our planet without compromising performance.',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: 'https://ecocatlitters.com/search?q={search_term_string}',
-      'query-input': 'required name=search_term_string',
-    },
   };
 
   return (

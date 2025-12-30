@@ -1,14 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-  @import url('@fontsource/space-grotesk/400.css');
-  @import url('@fontsource/space-grotesk/500.css');
-  @import url('@fontsource/space-grotesk/600.css');
-  @import url('@fontsource/space-grotesk/700.css');
-  @import url('@fontsource/ibm-plex-sans/400.css');
-  @import url('@fontsource/ibm-plex-sans/500.css');
-  @import url('@fontsource/ibm-plex-sans/600.css');
-
   *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;

@@ -107,10 +107,10 @@ export default function Header() {
         </Logo>
         <Nav $isOpen={isOpen}>
           <NavLink href="/the-problem">The Problem</NavLink>
-          <NavLink href="/solutions">Solutions</NavLink>
-          <NavLink href="/impact-calculator">Calculator</NavLink>
-          <NavLink href="/take-action">Take Action</NavLink>
-          <CTAButton href="/solutions#featured">Shop Eco →</CTAButton>
+          <NavLink href="/solutions">Litter Types</NavLink>
+          <NavLink href="/switching-guide">Switching Guide</NavLink>
+          <NavLink href="/certifications">Certifications</NavLink>
+          <CTAButton href="/solutions">Explore Options →</CTAButton>
         </Nav>
         <MenuButton onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? '✕' : '☰'}

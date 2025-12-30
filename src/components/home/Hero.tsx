@@ -124,7 +124,7 @@ export default function Hero() {
             <ActionButton href="/the-problem" variant="urgent">
               See the Crisis →
             </ActionButton>
-            <ActionButton href="/solutions" variant="secondary">
+            <ActionButton href="/solutions" variant="light">
               Find Solutions
             </ActionButton>
           </CTAGroup>
