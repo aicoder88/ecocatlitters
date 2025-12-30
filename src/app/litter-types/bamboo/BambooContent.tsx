@@ -3,6 +3,32 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import ArticleSchema from '@/components/seo/ArticleSchema';
+import LitterHeroImage from '@/components/ui/LitterHeroImage';
+import FAQSection from '@/components/faq/FAQSection';
+import FAQSchema from '@/components/seo/FAQSchema';
+
+const bambooFAQs = [
+  {
+    question: 'Is bamboo cat litter safe for cats?',
+    answer: 'Yes, bamboo cat litter is completely safe for cats. It\'s made from natural bamboo fibers without harmful chemicals or additives. Even if your cat ingests some while grooming, it will pass through their system safely.'
+  },
+  {
+    question: 'Does bamboo litter clump well?',
+    answer: 'Most bamboo litters clump well, though clumps may be slightly softer than clay. Look for brands specifically formulated for clumping if this is important to you. The clumps are still easy to scoop and dispose of.'
+  },
+  {
+    question: 'How often should I change bamboo cat litter?',
+    answer: 'Scoop daily and completely replace bamboo litter every 2-3 weeks for single cats, or weekly for multi-cat households. Bamboo\'s natural odor control often means it stays fresher longer than clay.'
+  },
+  {
+    question: 'Can bamboo litter be composted?',
+    answer: 'Yes! Bamboo litter is 100% biodegradable and can be composted. However, only compost urine-soaked litter—cat feces should go in the trash due to potential pathogens. Used bamboo litter breaks down in 2-3 weeks.'
+  },
+  {
+    question: 'Is bamboo litter more expensive than clay?',
+    answer: 'Bamboo litter typically costs more upfront than clay, but many users find it lasts longer due to superior absorption. When you factor in the environmental benefits and potential health advantages (less dust), many consider it worth the investment.'
+  }
+];
 
 const Article = styled.article`
   max-width: 800px;
@@ -189,10 +215,16 @@ export default function BambooContent() {
         datePublished="2024-01-15"
         dateModified="2024-12-01"
       />
+      <FAQSchema faqs={bambooFAQs} />
       <Article>
         <Breadcrumb>
           <Link href="/">Home</Link> / <Link href="/solutions">Eco Litter Types</Link> / Bamboo
         </Breadcrumb>
+
+        <LitterHeroImage
+          src="/images/litters/bamboo.png"
+          alt="Eco-friendly bamboo cat litter in a modern litter box with bamboo plants"
+        />
 
         <Title>Bamboo Cat Litter: The Complete Guide</Title>
         <Subtitle>
@@ -378,6 +410,8 @@ export default function BambooContent() {
             which have more similar textures.
           </Paragraph>
         </Section>
+
+        <FAQSection faqs={bambooFAQs} />
 
         <RelatedLinks>
           <RelatedTitle>Explore Other Eco-Friendly Options</RelatedTitle>

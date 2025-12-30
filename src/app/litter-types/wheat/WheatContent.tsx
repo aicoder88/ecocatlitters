@@ -3,6 +3,32 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import ArticleSchema from '@/components/seo/ArticleSchema';
+import LitterHeroImage from '@/components/ui/LitterHeroImage';
+import FAQSection from '@/components/faq/FAQSection';
+import FAQSchema from '@/components/seo/FAQSchema';
+
+const wheatFAQs = [
+  {
+    question: 'How does wheat litter control odors?',
+    answer: 'Wheat contains natural enzymes that actively break down urea (the compound that turns into ammonia) at the molecular level. This enzymatic action provides sustained odor control that actually improves over time, unlike litters that just mask smells.'
+  },
+  {
+    question: 'Is wheat litter safe for cats with allergies?',
+    answer: 'Wheat litter is generally safe for cats—they don\'t have gluten sensitivities like some humans. However, if someone in your household has celiac disease or severe gluten sensitivity, airborne particles during pouring could cause reactions.'
+  },
+  {
+    question: 'Can wheat litter be flushed?',
+    answer: 'Yes, most wheat litters are flushable and septic-safe. The wheat fibers break down easily in water. Flush only small amounts at a time and never flush solid cat waste. Check your local regulations about flushing pet products.'
+  },
+  {
+    question: 'Does wheat litter clump as well as clay?',
+    answer: 'Wheat litter forms excellent clumps thanks to natural wheat starches. Many users report clumps that are as firm as or firmer than premium clay litters. Clumps hold together well during scooping without crumbling.'
+  },
+  {
+    question: 'How should I store wheat cat litter?',
+    answer: 'Store wheat litter in a cool, dry place in a sealed container. Keep it away from humidity and pantry pest-prone areas. Check expiration dates as old wheat litter may lose enzyme effectiveness. Discard any that develops an off smell or mold.'
+  }
+];
 
 const Article = styled.article`
   max-width: 800px;
@@ -208,10 +234,16 @@ export default function WheatContent() {
         datePublished="2024-01-15"
         dateModified="2024-12-01"
       />
+      <FAQSchema faqs={wheatFAQs} />
       <Article>
         <Breadcrumb>
           <Link href="/">Home</Link> / <Link href="/solutions">Eco Litter Types</Link> / Wheat
         </Breadcrumb>
+
+        <LitterHeroImage
+          src="/images/litters/wheat.png"
+          alt="Natural wheat cat litter granules with golden wheat stalks"
+        />
 
         <Title>Wheat Cat Litter: Enzyme-Powered Performance</Title>
         <Subtitle>
@@ -454,6 +486,8 @@ export default function WheatContent() {
             alternatives with similar performance.
           </Paragraph>
         </Section>
+
+        <FAQSection faqs={wheatFAQs} />
 
         <RelatedLinks>
           <RelatedTitle>Explore Other Eco-Friendly Options</RelatedTitle>

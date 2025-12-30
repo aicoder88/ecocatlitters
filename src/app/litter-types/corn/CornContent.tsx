@@ -3,6 +3,32 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import ArticleSchema from '@/components/seo/ArticleSchema';
+import LitterHeroImage from '@/components/ui/LitterHeroImage';
+import FAQSection from '@/components/faq/FAQSection';
+import FAQSchema from '@/components/seo/FAQSchema';
+
+const cornFAQs = [
+  {
+    question: 'Is corn cat litter safe if my cat eats it?',
+    answer: 'Yes, corn litter is made from food-grade corn and is safe if ingested in small amounts. This makes it ideal for kittens who may taste-test their litter. However, if your cat regularly eats litter, consult your vet as this could indicate a health issue.'
+  },
+  {
+    question: 'Can you flush corn cat litter?',
+    answer: 'Most corn litters are flushable and septic-safe. The corn breaks down in water like toilet paper. However, flush only small amounts at a time, never flush cat feces (due to parasites), and check local regulations as some areas prohibit flushing any pet waste.'
+  },
+  {
+    question: 'Does corn litter attract bugs?',
+    answer: 'Corn litter can potentially attract pantry pests if left wet or stored improperly. Keep it in a cool, dry place in a sealed container. Change wet litter promptly and maintain regular litter box hygiene to prevent any issues.'
+  },
+  {
+    question: 'How does corn litter compare to clay for odor control?',
+    answer: 'Corn litter offers good odor control through absorption, though it may not be quite as strong as clay with deodorizers. For enhanced odor control, scoop frequently and consider adding an activated carbon supplement like <a href="https://purrify.ca/purr?utm_source=ecocatlitters" target="_blank">Purrify</a>.'
+  },
+  {
+    question: 'Will my cat accept corn litter?',
+    answer: 'Corn litter has one of the highest acceptance rates among eco-friendly options because its texture closely mimics fine-grain clay. Most cats transition easily, especially with a gradual 2-week mixing approach.'
+  }
+];
 
 const Article = styled.article`
   max-width: 800px;
@@ -209,10 +235,16 @@ export default function CornContent() {
         datePublished="2024-01-15"
         dateModified="2024-12-01"
       />
+      <FAQSchema faqs={cornFAQs} />
       <Article>
         <Breadcrumb>
           <Link href="/">Home</Link> / <Link href="/solutions">Eco Litter Types</Link> / Corn
         </Breadcrumb>
+
+        <LitterHeroImage
+          src="/images/litters/corn.png"
+          alt="Natural corn-based cat litter granules with corn cobs"
+        />
 
         <Title>Corn Cat Litter: Natural Clumping Power</Title>
         <Subtitle>
@@ -443,6 +475,8 @@ export default function CornContent() {
             is more widely available and usually more affordable.
           </Paragraph>
         </Section>
+
+        <FAQSection faqs={cornFAQs} />
 
         <RelatedLinks>
           <RelatedTitle>Explore Other Eco-Friendly Options</RelatedTitle>

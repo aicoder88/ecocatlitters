@@ -3,6 +3,32 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import ArticleSchema from '@/components/seo/ArticleSchema';
+import LitterHeroImage from '@/components/ui/LitterHeroImage';
+import FAQSection from '@/components/faq/FAQSection';
+import FAQSchema from '@/components/seo/FAQSchema';
+
+const paperFAQs = [
+  {
+    question: 'Why do vets recommend paper litter after surgery?',
+    answer: 'Vets recommend paper litter post-surgery because it produces zero dust that could enter incisions, doesn\'t stick to wounds like clumping litter, and is non-toxic if licked during grooming. Its soft texture is also gentle on healing bodies.'
+  },
+  {
+    question: 'Does paper litter control odors well?',
+    answer: 'Paper litter\'s main weakness is odor control—it absorbs but doesn\'t neutralize odors. To manage smells, scoop frequently, add baking soda, use an activated carbon supplement like <a href="https://purrify.ca/purr/products?utm_source=ecocatlitters" target="_blank">Purrify</a>, and replace all litter every 5-7 days.'
+  },
+  {
+    question: 'Is paper litter good for kittens?',
+    answer: 'Paper litter is excellent for kittens. It\'s safe if accidentally eaten, produces no dust for developing respiratory systems, and is gentle on young paw pads. Many breeders and shelters use paper litter for kittens under 8 weeks old.'
+  },
+  {
+    question: 'Can paper cat litter be composted?',
+    answer: 'Yes, paper litter is easily compostable. Used paper litter (without cat feces) breaks down quickly in compost. It represents true circular economy: recycled paper becomes litter, then returns to earth as compost.'
+  },
+  {
+    question: 'Why won\'t my cat use paper litter?',
+    answer: 'Some cats reject paper litter because the pellet texture feels different from clay. Try crumbled paper varieties with a finer texture, or mix paper with their current litter and gradually increase the ratio over 2-3 weeks.'
+  }
+];
 
 const Article = styled.article`
   max-width: 800px;
@@ -202,10 +228,16 @@ export default function PaperContent() {
         datePublished="2024-01-15"
         dateModified="2024-12-01"
       />
+      <FAQSchema faqs={paperFAQs} />
       <Article>
         <Breadcrumb>
           <Link href="/">Home</Link> / <Link href="/solutions">Eco Litter Types</Link> / Paper
         </Breadcrumb>
+
+        <LitterHeroImage
+          src="/images/litters/paper.png"
+          alt="Recycled paper cat litter pellets with sustainable materials"
+        />
 
         <Title>Paper Cat Litter: The Gentlest Choice</Title>
         <Subtitle>
@@ -457,6 +489,8 @@ export default function PaperContent() {
             <Link href="/litter-types/walnut"> walnut</Link> litter.
           </Paragraph>
         </Section>
+
+        <FAQSection faqs={paperFAQs} />
 
         <RelatedLinks>
           <RelatedTitle>Explore Other Eco-Friendly Options</RelatedTitle>

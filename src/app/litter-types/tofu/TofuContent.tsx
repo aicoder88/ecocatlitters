@@ -3,6 +3,32 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import ArticleSchema from '@/components/seo/ArticleSchema';
+import LitterHeroImage from '@/components/ui/LitterHeroImage';
+import FAQSection from '@/components/faq/FAQSection';
+import FAQSchema from '@/components/seo/FAQSchema';
+
+const tofuFAQs = [
+  {
+    question: 'What is tofu cat litter made from?',
+    answer: 'Tofu litter is made from okara—the soy pulp left over after soy milk production (the same process used to make human tofu). This byproduct would otherwise be discarded, making tofu litter an excellent upcycled product.'
+  },
+  {
+    question: 'Is tofu litter really flushable?',
+    answer: 'Yes, tofu litter is one of the most flushable options available. The soy fibers dissolve quickly and completely in water, much like toilet paper. It\'s gentle on septic systems. However, never flush cat feces due to potential parasites.'
+  },
+  {
+    question: 'Is tofu litter safe for kittens?',
+    answer: 'Tofu litter is one of the safest options for kittens. It\'s made from food-grade soy, safe if ingested, dissolves rather than clumps in stomachs, dust-free for young respiratory systems, and gentle on developing paws.'
+  },
+  {
+    question: 'Why is tofu litter in pellet form?',
+    answer: 'The cylindrical pellet shape offers unique advantages: less tracking on cat paws, easy visibility of soiled areas, quick absorption, and faster dissolution when flushed. Some brands also offer crushed varieties for cats who prefer finer textures.'
+  },
+  {
+    question: 'Does tofu litter smell bad?',
+    answer: 'Tofu litter has a mild, pleasant scent and offers good odor control through absorption. For heavy use or sensitive noses, scoop frequently and consider adding activated carbon like <a href="https://purrify.ca/purr/trial?utm_source=ecocatlitters" target="_blank">Purrify</a> for extra freshness.'
+  }
+];
 
 const Article = styled.article`
   max-width: 800px;
@@ -209,10 +235,16 @@ export default function TofuContent() {
         datePublished="2024-01-15"
         dateModified="2024-12-01"
       />
+      <FAQSchema faqs={tofuFAQs} />
       <Article>
         <Breadcrumb>
           <Link href="/">Home</Link> / <Link href="/solutions">Eco Litter Types</Link> / Tofu
         </Breadcrumb>
+
+        <LitterHeroImage
+          src="/images/litters/tofu.png"
+          alt="Tofu-based soy cat litter pellets with soybeans"
+        />
 
         <Title>Tofu Cat Litter: The Asian Sensation</Title>
         <Subtitle>
@@ -508,6 +540,8 @@ export default function TofuContent() {
             sawdust. Tofu is flushable; wood is not.
           </Paragraph>
         </Section>
+
+        <FAQSection faqs={tofuFAQs} />
 
         <RelatedLinks>
           <RelatedTitle>Explore Other Eco-Friendly Options</RelatedTitle>

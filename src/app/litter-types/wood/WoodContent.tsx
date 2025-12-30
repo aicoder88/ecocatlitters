@@ -3,6 +3,32 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import ArticleSchema from '@/components/seo/ArticleSchema';
+import LitterHeroImage from '@/components/ui/LitterHeroImage';
+import FAQSection from '@/components/faq/FAQSection';
+import FAQSchema from '@/components/seo/FAQSchema';
+
+const woodFAQs = [
+  {
+    question: 'What is the best type of wood cat litter?',
+    answer: 'Pine pellets are the most popular and affordable wood litter option. They offer excellent odor control due to natural pine oils. Cedar provides insect-repelling properties, while newer clumping wood varieties offer familiar scooping convenience.'
+  },
+  {
+    question: 'How do pine pellet litters work?',
+    answer: 'Pine pellets absorb urine and break down into sawdust. The intact pellets stay on top while sawdust falls to the bottom. Many users use sifting litter boxes to easily separate clean pellets from used sawdust for disposal.'
+  },
+  {
+    question: 'Is pine litter safe for cats?',
+    answer: 'Kiln-dried pine litter is safe for cats. The heat treatment removes harmful substances and reduces aromatic compounds. Never use fresh sawdust or construction lumber, which may contain toxic chemicals or untreated pine oils.'
+  },
+  {
+    question: 'Can you compost wood cat litter?',
+    answer: 'Yes, wood litter is excellent for composting. Used wood litter (minus feces) makes great brown material for compost piles. It breaks down naturally and adds carbon to your compost. Do not compost cat feces due to potential pathogens.'
+  },
+  {
+    question: 'Why is wood litter so cheap?',
+    answer: 'Wood litter, especially pine pellets, is affordable because it\'s made from lumber industry byproducts. Some people even use horse bedding pellets (same product, bigger bags) for additional savings. It\'s one of the most budget-friendly eco-options.'
+  }
+];
 
 const Article = styled.article`
   max-width: 800px;
@@ -189,10 +215,16 @@ export default function WoodContent() {
         datePublished="2024-01-15"
         dateModified="2024-12-01"
       />
+      <FAQSchema faqs={woodFAQs} />
       <Article>
         <Breadcrumb>
           <Link href="/">Home</Link> / <Link href="/solutions">Eco Litter Types</Link> / Wood
         </Breadcrumb>
+
+        <LitterHeroImage
+          src="/images/litters/wood.png"
+          alt="Pine wood pellet cat litter with natural wood shavings"
+        />
 
         <Title>Wood Cat Litter: Pine, Cedar & Sawdust Options</Title>
         <Subtitle>
@@ -425,6 +457,8 @@ export default function WoodContent() {
             </ListItem>
           </List>
         </Section>
+
+        <FAQSection faqs={woodFAQs} />
 
         <RelatedLinks>
           <RelatedTitle>Explore Other Eco-Friendly Options</RelatedTitle>

@@ -110,6 +110,7 @@ export default function Header() {
           <NavLink href="/solutions">Litter Types</NavLink>
           <NavLink href="/switching-guide">Switching Guide</NavLink>
           <NavLink href="/certifications">Certifications</NavLink>
+          <NavLink href="/blog">Blog</NavLink>
           <CTAButton href="/solutions">Explore Options →</CTAButton>
         </Nav>
         <MenuButton onClick={() => setIsOpen(!isOpen)}>

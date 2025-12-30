@@ -3,6 +3,32 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import ArticleSchema from '@/components/seo/ArticleSchema';
+import LitterHeroImage from '@/components/ui/LitterHeroImage';
+import FAQSection from '@/components/faq/FAQSection';
+import FAQSchema from '@/components/seo/FAQSchema';
+
+const grassFAQs = [
+  {
+    question: 'Why do cats love grass litter so much?',
+    answer: 'Cats evolved as grassland hunters, so the soft texture and subtle vegetal scent may appeal to deep instincts. Many cats that reject other eco-litters accept grass litter immediately—some even prefer it to their old clay litter right away.'
+  },
+  {
+    question: 'Is grass litter worth the higher price?',
+    answer: 'While grass litter costs more upfront, many users find the value proposition works out: it lasts longer, needs fewer supplements for odor control, high cat acceptance prevents waste, and the lightweight bags are easier to manage.'
+  },
+  {
+    question: 'Does grass litter clump well?',
+    answer: 'Grass litter forms very tight, solid clumps that don\'t crumble during scooping. Clumps form quickly and hold together better than many other eco-litters, making cleanup efficient and reducing waste.'
+  },
+  {
+    question: 'Is grass cat litter hypoallergenic?',
+    answer: 'Yes, grass litter is gluten-free and generally hypoallergenic, making it suitable for households with grain sensitivities. It also produces minimal dust, benefiting cats and humans with respiratory sensitivities.'
+  },
+  {
+    question: 'Where can I buy grass cat litter?',
+    answer: 'Grass litter is available at specialty pet stores, natural grocery stores, online retailers (often with subscription discounts), and some large pet chains in their eco-friendly sections. Availability is growing as demand increases.'
+  }
+];
 
 const Article = styled.article`
   max-width: 800px;
@@ -207,10 +233,16 @@ export default function GrassContent() {
         datePublished="2024-01-15"
         dateModified="2024-12-01"
       />
+      <FAQSchema faqs={grassFAQs} />
       <Article>
         <Breadcrumb>
           <Link href="/">Home</Link> / <Link href="/solutions">Eco Litter Types</Link> / Grass
         </Breadcrumb>
+
+        <LitterHeroImage
+          src="/images/litters/grass.png"
+          alt="Fresh grass seed cat litter in a modern eco-friendly setting"
+        />
 
         <Title>Grass Cat Litter: The New Generation</Title>
         <Subtitle>
@@ -489,6 +521,8 @@ export default function GrassContent() {
             potentially lower prices in the coming years.
           </Paragraph>
         </Section>
+
+        <FAQSection faqs={grassFAQs} />
 
         <RelatedLinks>
           <RelatedTitle>Explore Other Eco-Friendly Options</RelatedTitle>

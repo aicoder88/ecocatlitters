@@ -3,6 +3,32 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import ArticleSchema from '@/components/seo/ArticleSchema';
+import LitterHeroImage from '@/components/ui/LitterHeroImage';
+import FAQSection from '@/components/faq/FAQSection';
+import FAQSchema from '@/components/seo/FAQSchema';
+
+const walnutFAQs = [
+  {
+    question: 'Why is walnut litter so good at odor control?',
+    answer: 'Walnut shells contain natural tannins with antimicrobial properties, plus their chemical composition helps neutralize ammonia directly. Unlike clay that masks odors with fragrances, walnut actually eliminates odors at the source.'
+  },
+  {
+    question: 'Is walnut litter safe for people with nut allergies?',
+    answer: 'If anyone in your household has a tree nut allergy, walnut litter is not recommended. While cats aren\'t typically affected, humans with nut allergies may react to airborne particles when pouring or scooping. Consult your allergist first.'
+  },
+  {
+    question: 'Why is walnut litter dark colored?',
+    answer: 'Walnut litter\'s natural dark brown color is actually advantageous—it hides stains and discoloration that would be obvious in light litters. However, the dark color makes it harder to monitor urine color, which can indicate health issues.'
+  },
+  {
+    question: 'Does walnut litter track a lot?',
+    answer: 'Walnut litter can produce some fine particles that track on paws. Using a litter mat, choosing larger granule sizes, and keeping litter depth at 3-4 inches can minimize tracking. The trade-off is worth it for many users given the superior odor control.'
+  },
+  {
+    question: 'Can walnut cat litter be composted?',
+    answer: 'Yes, walnut litter is biodegradable and can be composted. It breaks down naturally and adds organic material to compost. As with all litters, only compost urine-soaked material—never cat feces due to potential pathogens.'
+  }
+];
 
 const Article = styled.article`
   max-width: 800px;
@@ -227,10 +253,16 @@ export default function WalnutContent() {
         datePublished="2024-01-15"
         dateModified="2024-12-01"
       />
+      <FAQSchema faqs={walnutFAQs} />
       <Article>
         <Breadcrumb>
           <Link href="/">Home</Link> / <Link href="/solutions">Eco Litter Types</Link> / Walnut
         </Breadcrumb>
+
+        <LitterHeroImage
+          src="/images/litters/walnut.png"
+          alt="Crushed walnut shell cat litter with whole walnuts"
+        />
 
         <Title>Walnut Cat Litter: Nature's Odor Fighter</Title>
         <Subtitle>
@@ -484,6 +516,8 @@ export default function WalnutContent() {
             </ListItem>
           </List>
         </Section>
+
+        <FAQSection faqs={walnutFAQs} />
 
         <RelatedLinks>
           <RelatedTitle>Explore Other Eco-Friendly Options</RelatedTitle>

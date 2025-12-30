@@ -3,6 +3,7 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import ArticleSchema from '@/components/seo/ArticleSchema';
+import LitterComparisonTable from '@/components/comparison/LitterComparisonTable';
 
 const Hero = styled.section`
   background: linear-gradient(135deg,
@@ -269,6 +270,11 @@ export default function SolutionsContent() {
             household.
           </IntroText>
         </Intro>
+
+        <ComparisonSection>
+          <ComparisonTitle>Quick Comparison: All 8 Eco-Friendly Litter Types</ComparisonTitle>
+          <LitterComparisonTable />
+        </ComparisonSection>
 
         <CategorySection>
           <CategoryTitle>Plant-Fiber Litters</CategoryTitle>
