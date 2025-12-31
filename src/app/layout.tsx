@@ -23,14 +23,6 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     siteName: 'EcoCatLitters',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'EcoCatLitters - Sustainable Cat Litter Solutions',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
