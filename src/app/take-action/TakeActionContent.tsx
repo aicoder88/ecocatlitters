@@ -311,14 +311,14 @@ export default function TakeActionContent() {
           <CTAText>
             Join thousands of cat parents who&apos;ve already made the change.
             Start with{' '}
-            <a href="https://purrify.ca/purr?utm_source=ecocatlitters" style={{ color: '#74C69D' }}>
+            <a href="https://www.purrify.ca/products?utm_source=ecocatlitters" style={{ color: '#74C69D' }}>
               Purrify
             </a>
             —it works with any litter and eliminates odors naturally.
           </CTAText>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <ActionButton
-              href="https://purrify.ca/purr/trial?utm_source=ecocatlitters"
+              href="https://www.purrify.ca/products/trial-size?utm_source=ecocatlitters"
               external
             >
               Try Purrify Risk-Free →

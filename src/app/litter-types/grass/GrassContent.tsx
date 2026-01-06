@@ -319,7 +319,7 @@ export default function GrassContent() {
               <strong>Odor control:</strong> Among the best of any eco-friendly option.
               Natural plant fibers absorb and neutralize odors effectively. For even
               stronger results, some owners add{' '}
-              <a href="https://purrify.ca/purr?utm_source=ecocatlitters">
+              <a href="https://www.purrify.ca/products?utm_source=ecocatlitters">
                 Purrify
               </a>{' '}
               to their litter box.

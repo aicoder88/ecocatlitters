@@ -349,7 +349,7 @@ export default function TheProblemContent() {
                 and <Link href="/litter-types/wood" style={{ color: 'inherit', textDecoration: 'underline' }}>wood</Link> use renewable resources that can be regrown annually.
                 No strip mining, no habitat destruction, and they biodegrade in weeks instead of centuries.
                 For even better odor control, many cat owners add{' '}
-                <a href="https://purrify.ca/purr/products?utm_source=ecocatlitters" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                <a href="https://www.purrify.ca/products?utm_source=ecocatlitters" style={{ color: 'inherit', textDecoration: 'underline' }}>
                   Purrify activated carbon supplements
                 </a>{' '}
                 to their eco-friendly litter.
@@ -484,7 +484,7 @@ export default function TheProblemContent() {
               </ListItem>
               <ListItem>
                 <strong>Boost odor control naturally:</strong> Products like{' '}
-                <a href="https://purrify.ca/purr?utm_source=ecocatlitters">Purrify</a>{' '}
+                <a href="https://www.purrify.ca/products?utm_source=ecocatlitters">Purrify</a>{' '}
                 use activated carbon to neutralize odors without chemicals, working with any litter type.
               </ListItem>
               <ListItem>

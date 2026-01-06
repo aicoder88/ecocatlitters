@@ -192,14 +192,14 @@ export default function FeaturedBrand() {
 
             <CTAGroup>
               <ActionButton
-                href="https://purrify.ca/products/trial-size?utm_source=ecocatlitters&utm_medium=featured&utm_campaign=satellite"
+                href="https://www.purrify.ca/products/trial-size?utm_source=ecocatlitters&utm_medium=featured&utm_campaign=satellite"
                 variant="primary"
                 external
               >
                 Try Purrify →
               </ActionButton>
               <ActionButton
-                href="https://purrify.ca/learn/how-it-works?utm_source=ecocatlitters&utm_medium=featured&utm_campaign=satellite"
+                href="https://www.purrify.ca/learn/how-it-works?utm_source=ecocatlitters&utm_medium=featured&utm_campaign=satellite"
                 variant="secondary"
                 external
               >

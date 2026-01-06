@@ -92,7 +92,7 @@ export default function CallToAction() {
             Explore Litter Types
           </ActionButton>
           <ActionButton
-            href="https://purrify.ca/purr/trial?utm_source=ecocatlitters"
+            href="https://www.purrify.ca/products/trial-size?utm_source=ecocatlitters"
             variant="light"
             external
           >

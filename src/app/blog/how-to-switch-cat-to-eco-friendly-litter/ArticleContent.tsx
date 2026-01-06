@@ -327,7 +327,7 @@ export default function ArticleContent() {
           <Paragraph>
             <strong>Odor issues during transition:</strong> Mixing different litter types can
             temporarily reduce odor control. Consider adding an{' '}
-            <a href="https://purrify.ca/purr?utm_source=ecocatlitters">
+            <a href="https://www.purrify.ca/products?utm_source=ecocatlitters">
               activated carbon supplement like Purrify
             </a>{' '}
             during the transition period to maintain freshness.

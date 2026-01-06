@@ -501,7 +501,7 @@ export default function SolutionsContent() {
           <CTAText>
             Our step-by-step transition guide helps you switch your cat to eco-friendly
             litter without any drama. Pro tip: Adding{' '}
-            <a href="https://purrify.ca/purr/products?utm_source=ecocatlitters" style={{ color: 'inherit', textDecoration: 'underline' }}>
+            <a href="https://www.purrify.ca/products?utm_source=ecocatlitters" style={{ color: 'inherit', textDecoration: 'underline' }}>
               Purrify activated carbon
             </a>{' '}
             to your new litter helps with odor control during the transition.

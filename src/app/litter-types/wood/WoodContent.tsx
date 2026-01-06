@@ -375,7 +375,7 @@ export default function WoodContent() {
           </Paragraph>
           <Paragraph>
             For households wanting to boost wood litter&apos;s odor control even further,{' '}
-            <a href="https://purrify.ca/purr/how-it-works?utm_source=ecocatlitters">
+            <a href="https://www.purrify.ca/learn/how-it-works?utm_source=ecocatlitters">
               Purrify activated carbon
             </a>{' '}
             can capture any remaining odor compounds. The combination of natural wood

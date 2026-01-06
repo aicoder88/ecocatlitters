@@ -354,7 +354,7 @@ export default function WalnutContent() {
             Many cat owners who switch to walnut from clay report being surprised at how
             well it controls odors—often better than premium scented clay litters. For
             households with particularly sensitive noses or multiple cats, adding{' '}
-            <a href="https://purrify.ca/purr/products?utm_source=ecocatlitters">
+            <a href="https://www.purrify.ca/products?utm_source=ecocatlitters">
               Purrify activated carbon
             </a>{' '}
             alongside walnut litter creates an even more powerful odor-fighting combination.

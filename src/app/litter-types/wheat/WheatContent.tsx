@@ -306,7 +306,7 @@ export default function WheatContent() {
             use it (up to a point). The enzymes are doing their job continuously, not just
             at first contact. For multi-cat homes wanting extra odor protection, pairing
             wheat litter with{' '}
-            <a href="https://purrify.ca/purr/how-it-works?utm_source=ecocatlitters">
+            <a href="https://www.purrify.ca/learn/how-it-works?utm_source=ecocatlitters">
               Purrify activated carbon
             </a>{' '}
             creates a powerful dual-action system.

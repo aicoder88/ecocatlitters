@@ -374,7 +374,7 @@ export default function ArticleContent() {
             traps odor molecules. Just sprinkle it into your regular litter.
           </ProductText>
           <ProductButton
-            href="https://purrify.ca/purr?utm_source=ecocatlitters"
+            href="https://www.purrify.ca/products?utm_source=ecocatlitters"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -483,7 +483,7 @@ export default function ArticleContent() {
             </ListItem>
             <ListItem>
               Add{' '}
-              <a href="https://purrify.ca/purr?utm_source=ecocatlitters">
+              <a href="https://www.purrify.ca/products?utm_source=ecocatlitters">
                 Purrify activated carbon
               </a>{' '}
               as a supplement
