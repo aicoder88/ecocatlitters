@@ -52,10 +52,11 @@ public/
 ## Development Commands
 
 ```bash
-npm run dev        # Start dev server (http://localhost:3000)
-npm run build      # Production build (also generates sitemap)
-npm run start      # Start production server
-npm run lint       # Run ESLint
+pnpm install       # Install dependencies
+pnpm dev           # Start dev server (http://localhost:3000)
+pnpm build         # Production build (also generates sitemap)
+pnpm start         # Start production server
+pnpm lint          # Run ESLint
 ```
 
 ## Key Patterns & Conventions
@@ -225,7 +226,36 @@ Ensure `lib/registry.tsx` is properly wrapping the app in `layout.tsx`.
 Check that `styled.d.ts` properly extends DefaultTheme with the theme type.
 
 ### Build Failures
-Run `npm run lint` first to catch ESLint issues before building.
+Run `pnpm lint` first to catch ESLint issues before building.
+
+---
+
+## Deployment
+
+### Vercel Deployment
+
+Next.js 15 is optimized for Vercel with zero-configuration deployment:
+
+1. **Push to GitHub:** Changes trigger automatic deployment
+2. **Build command:** `pnpm build` (auto-detected)
+3. **Output:** Optimized static and serverless functions
+4. **Framework preset:** Next.js (auto-detected)
+
+### Deployment Architecture
+
+- **Static pages:** Pre-rendered at build time, served from Vercel's Edge Network
+- **API routes:** Deployed as serverless functions (if any)
+- **Styled-components SSR:** Server-side rendering configured via registry
+- **Image optimization:** Automatic via Next.js Image component
+- **Sitemap:** Generated post-build via next-sitemap
+
+### Configuration Files
+
+- `next.config.mjs` - Next.js configuration
+- `next-sitemap.config.js` - Sitemap generation settings
+- `.gitignore` - Excludes `.vercel/` build artifacts
+
+Site URL: https://ecocatlitters.com
 
 ---
 
